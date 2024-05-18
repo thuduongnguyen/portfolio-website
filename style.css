@@ -22,11 +22,11 @@
 
   --gradient-brand: radial-gradient(
       at 60% 31%,
-      rgb(10, 8, 54) 0px,
+      rgb(0, 0, 3) 0px,
       transparent 50%
     ),
-    radial-gradient(at 48% 98%, rgba(182, 81, 34, 0.552) 0px, transparent 50%),
-    radial-gradient(at 84% 67%, rgb(46, 18, 101) 0px, transparent 50%),
+    radial-gradient(at 48% 98%, rgba(132, 49, 11, 0.552) 0px, transparent 50%),
+    radial-gradient(at 84% 67%, rgb(19, 2, 54) 0px, transparent 50%),
     
     radial-gradient(at 70% 21%, rgba(2, 2, 19, 0.715) 0px, transparent 50%);
   --easing: cubic-bezier(0.86, 0, 0.07, 1);
@@ -424,7 +424,7 @@ main {
   min-block-size: 100vh;
   position: fixed;
   width: 100%;
-  background-color: #130d30;
+  background-color: #020009;
   background-image: var(--gradient-brand);
   transition: 450ms var(--easing);
   z-index: 3;

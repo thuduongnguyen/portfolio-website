@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+<!-- Update favicon href attribute with image of yourself -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/portfolio.png"
+      type="image/png"
+    />
+
+    <!-- Preloading fonts for better performance -->
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" defer></script>
+
+    <!-- Name -->
+    <title>Thu Nguyen's Portfolio</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">My Work</a></li>
+          <li class="nav-item"><a href="#blog">My Experience</a></li>
+          <li class="nav-item"><a href="#skills">My Skills</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- Replace with your name and job title -->
+          <h1 class="h1">
+            <span>Hi, I'm Thu Nguyen</span>
+            <span>Current Software Development Student</span>
+          </h1>
+
+          <!-- Add a small introductory paragraph about yourself -->
+          <p class="header-text">
+            A student striving for success, have experience in both technology and marketing industries.
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Hire me</a>
+            <a href="#work" class="btn btn-secondary">See my work</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="client">
+        <div class="container">
+          <h2 class="h2">Trusted by</h2>
+          <div class="logos">
+            <!-- Client logo -->
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/stripe.svg"
+                alt="Ideacraft"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/datastax.svg"
+                alt="Golden grid"
+                class="logo"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/coke.svg"
+                alt="Theia"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/gm.svg"
+                alt="General motors"
+                class="logo hide to-top"
+              />
+
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/shares.svg"
+                alt="Chippy"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/shopify.svg"
+                alt="Shopify"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/agency-elevation.svg"
+                alt="Agency elevation"
+                class="logo hide to-top"
+              /><img
+                loading="lazy"
+                src="assets/images/trusted-by/gitlab.svg"
+                alt="Ron jones"
+                class="logo"
+              /><img
+                loading="lazy"
+                src="assets/images/trusted-by/duolingo.svg"
+                alt="Mighty furniture's"
+                class="logo hide to-bottom"
+              />
+            </div>
+            <div class="logo-group">
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/coyote.svg"
+                alt="Bulls eye"
+                class="logo hide to-top"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/astrato.svg"
+                alt="Chippy"
+                class="logo"
+              />
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/mercado.svg"
+                alt="Fastlane"
+                class="logo hide to-bottom"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Selected Work</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Project title -->
+                <h3 class="h3">Music Player</h3>
+                <!-- Description  -->
+                <p class="work-text">
+                  The website is designed to provide an user friendly interface for playing music tracks.
+                </p>
+                <!-- Add technologies -->
+                <ol class="work-technologies">
+                  <li>JavaScript</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ol>
+
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://thuduongnguyen.github.io/music-player" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+
+                  <!-- Add link to project source code -->
+                  <a
+                    href="https://github.com/thuduongnguyen/music-player"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+
+         <!-- Update img src and alt attribute  -->
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/music-player.png"
+                  alt="music-player"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Project title -->
+                <h3 class="h3">Event Booking Website</h3>
+                <!-- Description  -->
+
+                <p class="work-text">Website for booking Taylor Swift's Eras Tour tickets.</p>
+                <ol class="work-technologies">
+                  <li>JavaScript</li>
+                  <li>CSS</li>
+                  <li>HTML</li>
+                </ol>
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://thuduongnguyen.github.io/event-booking-website/" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+
+                     <!-- Add link to project source code in href attribute -->
+                  <a
+                    href="https://github.com/thuduongnguyen/event-booking-website"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/event-booking.png"
+                  alt="event booking website"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Dog Booking Website</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  Website for booking dog care.
+                </p>
+                <ol class="work-technologies">
+                  <li>JavaScript</li>
+                  <li>CSS</li>
+                  <li>HTML</li>
+                </ol>
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://thuduongnguyen.github.io/dog-booking-website/" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a>
+
+                   <!-- Add link to project source code in href attribute -->
+                  <a
+                    href="https://github.com/thuduongnguyen/dog-booking-website"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/dog-booking.png"
+                  alt="dog booking"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="article">
+        <div class="container">
+          <h2 class="h2" id="blog">My Experience</h2>
+          <div class="article-boxes">
+            <article class="article-box featured-article">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h3">
+                    Software Development Intern
+                  </h3>
+                  <p class="article-text">
+                    VietTotal | Feb. 2024 to Apr. 2024
+                  </p>
+                  <p class="experience-text">
+                    Developed basic website based on HTML, CSS, JavaScript. 
+                    Worked with customers to understand demands for software features and design.
+                  </p>
+                </div>
+                <div class="experience-info">
+                  <a href="https://www.linkedin.com/in/thuduongnguyen/" class="link" target="_blank" rel="noopener">Continue reading</a>
+                  <span class="reaction-count">
+                    <img src="./assets/images/heart-outline.svg" alt="heart" />
+                    100
+                  </span>
+                </div>
+              </div>
+              <picture class="experience-illustration">
+                <img
+                  src="assets/images/featured-blog.webp"
+                  alt="MacBook Pro"
+                  loading="lazy"
+                />
+              </picture>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">Marketing Executive</h3>
+                  <br/>
+                  <p class="article-text">
+                    Apollo Edu | Jun. 2023 - Aug. 2023
+                  </p>
+                  <p class="article-text">
+                    Generated ideas and collaborated with the IT department to measure website content quality. 
+                    Analyzed data on content performance, optimized the content strategy. 
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="https://www.linkedin.com/in/thuduongnguyen/" class="link" target="_blank" rel="noopener"
+                    >Continue reading</a
+                  >
+                  <span class="reaction-count">
+                    <img
+                      src="./assets/images/heart-outline.svg"
+                      alt="heart"
+                      loading="lazy"
+                    />
+                    100
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">
+                    Computer Tutor Volunteer
+                  </h3>
+                  <p class="article-text">
+                    Women's Centre of Calgary | Jan. 2024 - Apr. 2024
+                  </p>
+                  <p class="article-text">
+                    Provided individualized computer skills training for women.
+                    Led a team of 5 people in organizing events.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="https://www.linkedin.com/in/thuduongnguyen/" class="link" target="_blank" rel="noopener"
+                    >Continue reading</a
+                  >
+                  <span class="reaction-count">
+                    <img
+                      src="./assets/images/heart-outline.svg"
+                      alt="heart"
+                      loading="lazy"
+                    />
+                    100
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">Personal Styling Volunteer</h3>
+                  <p class="article-text">
+                    Making Changes Association | Jan. 2024 - Apr. 2024
+                  </p>
+                  <p class="article-text">
+                    Consulted women on fashionable items, tailored to individual preferences.
+                    Effectively communicated to explain options and ensure a positive experience.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="https://dev.to/devsyedmohsin" class="link" target="_blank" rel="noopener"
+                    >Continue reading</a
+                  >
+                  <span class="reaction-count">
+                    <img
+                      loading="lazy"
+                      src="./assets/images/heart-outline.svg"
+                      alt="heart"
+                    />
+                    350
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Update skills-img src, alt  and title attributes -->
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">My Toolkit</h2>
+          <div class="skills-imgs">
+            <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
+            <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML" class="skills-img" loading="lazy" title="HTML">
+            <img src="assets/images/skills/html.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+            <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials, author name, author job, img src and, alt attributes -->
+
+      <section>
+        <h2 class="h2">Testimonials</h2>
+        <div class="container">
+          <ol class="testimonials">
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Thu was one of my standout students in the class. She not only fnished with an A+ in the class, she was
+                hard working, inquisitive, proactive, and came to me with thoughtful questions well in advance of
+                most other students. Her questions often helped me by providing feedback on subject areas that
+                required follow up or extra attention.
+              </blockquote>
+              <figure class="testimonial-author">
+                <figcaption>
+                  <h3 class="testimonial-author-name">Kerry Todyruik</h3>
+                  <p class="testimonial-author-job">Web Development Instructor @SAIT</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Thu Duong Nguyen is a standout in class. 
+                She actively engages, asks questions, and gets top grades. 
+                She's dedicated and hardworking. 
+                And she's not just about grades, she's supportive of her classmates and a natural leader in group projects.
+              </blockquote>
+              <figure class="testimonial-author">
+                <figcaption>
+                  <h3 class="testimonial-author-name">
+                    Ahmad Almasri
+                  </h3>
+                  <p class="testimonial-author-job">OOP Instructor @SAIT</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Thu has consistently demonstrated exceptional understanding of the curriculum,
+                compassionately working in community and helping reduce barriers related to challenges in
+                community members accessing digital literacy. 
+                Thu is intelligent and patient which makes her a perfect fit for our program.
+              </blockquote>
+              <figure class="testimonial-author">
+                <figcaption>
+                  <h3 class="testimonial-author-name">Beryl Onyango</h3>
+                  <p class="testimonial-author-job">Learning Coordinator @Women's Centre of Cal</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Send Message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Available for hire
+              </strong>
+              <p class="contact-text">
+                I am dedicated to self-learning and actively improve my technological skills. 
+              </p>
+              <p class="contact-text">
+                My desire is to be granted the first opportunity where I can prove my abilities, my hard work, and my drive for success.
+              </p>
+              <br/><br/>
+              <p>Thu Nguyen</p>
+            </div>
+            <form action="#" class="contact-form" netlify>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">How can I help you?</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Update href and src attributes -->
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/thuduongnguyen" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/thuduongnguyen/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> - Designed & developed by <a target="_blank" rel="noopener" href="https://github.com/thuduongnguyen">Thu Nguyen.</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

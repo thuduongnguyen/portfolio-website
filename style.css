@@ -22,15 +22,13 @@
 
   --gradient-brand: radial-gradient(
       at 60% 31%,
-      rgb(255, 131, 139) 0px,
+      rgb(10, 8, 54) 0px,
       transparent 50%
     ),
-    radial-gradient(at 48% 98%, rgba(0, 255, 166, 0.707) 0px, transparent 50%),
-    radial-gradient(at 84% 67%, rgb(255, 129, 125) 0px, transparent 50%),
-    radial-gradient(at 16% 47%, rgb(255, 90, 112) 0px, transparent 50%),
-    radial-gradient(at 73% 11%, rgb(115, 255, 225) 0px, transparent 50%),
-    radial-gradient(at 49% 37%, rgba(255, 249, 89, 0.695) 0px, transparent 50%),
-    radial-gradient(at 70% 21%, rgba(58, 255, 186, 0.715) 0px, transparent 50%);
+    radial-gradient(at 48% 98%, rgba(182, 81, 34, 0.552) 0px, transparent 50%),
+    radial-gradient(at 84% 67%, rgb(46, 18, 101) 0px, transparent 50%),
+    
+    radial-gradient(at 70% 21%, rgba(2, 2, 19, 0.715) 0px, transparent 50%);
   --easing: cubic-bezier(0.86, 0, 0.07, 1);
 
   --site-max-width: 1280px;
@@ -426,7 +424,7 @@ main {
   min-block-size: 100vh;
   position: fixed;
   width: 100%;
-  background-color: #ff5e99;
+  background-color: #130d30;
   background-image: var(--gradient-brand);
   transition: 450ms var(--easing);
   z-index: 3;

@@ -1,1 +1,9 @@
-# portfolio-website
+# Portfolio Website
+
+### Deployment
+Link:
+
+### Techniques:
+- JavaScript
+- CSS
+- HTML

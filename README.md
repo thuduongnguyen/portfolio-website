@@ -1,7 +1,7 @@
 # Portfolio Website
 
 ### Deployment
-Link:
+Link: https://thuduongnguyen.github.io/portfolio-website/#contact
 
 ### Techniques:
 - JavaScript
